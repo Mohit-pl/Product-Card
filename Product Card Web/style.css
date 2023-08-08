@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: 175px 220px 175px;
+    align-items: center;
+    gap: 1rem;
+    font-size: 30px;
+    color: rgb(101, 235, 101);
+}
+
+.title::before, .title::after{
+    content: "";
+    height: 2px;
+    background-color: gray;
+    display: block;
+}
+
+.warpper{
+    background: white;
+    width: 100vw;
+
+}
+
+.accordian{
+    position: relative;
+    margin: 60px auto;
+    width: 600px;
+}
+
+.txt-bold{
+    font-size: 17px;
+    font-weight: bold;
+    left: 20px;
+    position: relative;
+}
+
+.txt-bold1{
+    font-size: 17px;
+    font-weight: bold;
+    /* left: 20px; */
+    position: relative;
+}
+
+.drop-heading{
+    display: flex;
+    width: 32%;
+    justify-content: space-between;
+    margin-left: 27px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.all-para{
+    right: 17px;
+    position: absolute;
+    top: 88px;
+}
+
+.all-para1{
+    position: absolute;
+    right: 20px;
+}
+
+.all-para3{
+    right: 28px;
+    position: absolute;
+    /* bottom: 251px; */
+    margin: -11px;
+}
+
+.mt-pop{
+    position: absolute;
+    /* top: 166px; */
+    margin: -21px;
+    right: 40px;
+    color: #37cf46;
+    text-shadow:
+        0 0 7px #7cee65,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px rgb(32, 215, 154),
+        0 0 151px #0fa;
+}
+
+
+.dash-para{
+    position: absolute;
+    left: 217px;
+    /* top: 194px; */
+    opacity: 0.4;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin: 2px;
+}
+
+
+.acc-desc{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordian .acc-desc .label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.accordian .content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s, padding 0.7s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.btn{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.last-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.green-text{
+    color: rgb(79, 202, 79);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.active{
+    background: rgb(176, 255, 176);
+    border: 2px solid green;
+    z-index: 1;
+    /* position: relative; */
+    box-shadow: 6px 6px 10px -1px rgba(118, 236, 131, 0.767),
+    -6px -6px 10px -1px rgba(108, 248, 155, 0.7);
+}
+ 
